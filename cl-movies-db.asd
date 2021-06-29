@@ -6,6 +6,7 @@
 	       #:postmodern
 	       #:simple-date)
   :components ((:file "package")
+	       (:file "application")
 	       (:module :src
 			:serial t      
 			:components

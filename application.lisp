@@ -1,4 +1,11 @@
-(in-package :cl-movies-db)
+(in-package #:cl-user)
 
-(defun start-server ()
-  (hunchentoot:start (make-instance 'hunchentoot:easy-acceptor) :port 3000))
+(defvar *acceptor* nil)
+
+(defun initialize-application (&key port)
+
+  (when *acceptor*
+    (hunchentoot:stop *acceptor*))
+
+  (setf *acceptor*
+    (hunchentoot:start (make-instance 'hunchentoot:easy-acceptor :port port))))
