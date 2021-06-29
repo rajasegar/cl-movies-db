@@ -1,4 +1,4 @@
-(in-package :example)
+(in-package :cl-movies-db)
 
 (defmacro standard-page (&body body)
   `(with-html-output-to-string (*standard-output* nil :prologue t :indent t)

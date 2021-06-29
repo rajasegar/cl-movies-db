@@ -1,4 +1,4 @@
-(in-package :example)
+(in-package :cl-movies-db)
 
 (defun symb (a b)
   (intern (format nil "~a-~a" (symbol-name a) (symbol-name b))))

@@ -1,4 +1,4 @@
-(in-package :example)
+(in-package :cl-movies-db)
 
 (defmacro defmodel (name slot-definitions)
   `(progn

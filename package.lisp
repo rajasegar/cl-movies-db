@@ -1,4 +1,4 @@
 ;;;; package.lisp
 
-(defpackage #:example
+(defpackage #:cl-movies-db
   (:use #:cl #:hunchentoot #:postmodern #:simple-date #:cl-who))

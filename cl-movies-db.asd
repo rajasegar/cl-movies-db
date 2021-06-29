@@ -1,4 +1,4 @@
-(asdf:defsystem #:example
+(asdf:defsystem #:cl-movies-db
   :serial t
   :description "Example cl-heroku application"
   :depends-on (#:hunchentoot

@@ -1,4 +1,4 @@
-(in-package :example)
+(in-package :cl-movies-db)
        
 (defmodel movie
     ((title :col-type string :initarg :title :accessor movie-title)

@@ -1,4 +1,4 @@
-(in-package :example)
+(in-package :cl-movies-db)
 
 (defun controller-edit ()
   (let ((movie (movie-get (get-id-from-uri))))

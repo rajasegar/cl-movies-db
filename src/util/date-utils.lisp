@@ -1,4 +1,4 @@
-(in-package :example)
+(in-package :cl-movies-db)
 
 (defmacro with-date (date &body body)
   "Decodes date and binds to year, month and day variables."

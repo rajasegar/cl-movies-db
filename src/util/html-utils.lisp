@@ -1,4 +1,4 @@
-(in-package :example)
+(in-package :cl-movies-db)
 
 (defmacro html-to-stout (&body body)
   "Outputs HTML to standard out. Thanks Inaimathi for this tip!"
