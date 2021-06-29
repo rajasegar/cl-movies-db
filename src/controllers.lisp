@@ -12,6 +12,13 @@
        (create-regex-dispatcher "^/add-movie" 'controller-add-movie)
        (create-static-file-dispatcher-and-handler "/site.css" "static/application.css")))
 
+;; simple date
+(ql:quickload :simple-date/postgres-glue)
+
+(setf cl-postgres:*sql-readtable*
+        (cl-postgres:copy-sql-readtable
+            simple-date-cl-postgres-glue:*simple-date-sql-readtable*))
+
 ;; Controller that do not render views are below -- those that do are in views folder
 
 (defun controller-to-index ()
