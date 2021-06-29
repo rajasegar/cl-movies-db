@@ -6,9 +6,10 @@
   #+sbcl (sb-posix:getenv target))
 
 ;; Database
-(defvar *database-url* (getenv "DATABASE_URL"))
-(format t "DATABASE-URL: ~a~%" *database-url*)
+(defvar *database-url* (uiop:getenv "DATABASE_URL"))
+;; (format t "DATABASE-URL: ~a~%" *database-url*)
 (defvar *local-db-params* (list "test" "user1" "user1" "localhost"))
+;; (format t "LOCAL DB PARAMS: ~a~%" *local-db-params*)
 
 ;; Start local server
 ;(defvar *server* (start (make-instance 'easy-acceptor :port 8088)))
