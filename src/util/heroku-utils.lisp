@@ -6,7 +6,8 @@
   #+sbcl (sb-posix:getenv target))
 
 ;; Database
-(defvar *database-url* (heroku-getenv "DATABASE_URL"))
+(defvar *database-url* (getenv "DATABASE_URL"))
+(format t "DATABASE-URL: ~a~%" *database-url*)
 (defvar *local-db-params* (list "test" "user1" "user1" "localhost"))
 
 ;; Start local server
