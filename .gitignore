@@ -1,0 +1,5 @@
+# Ignore all emacs backup files
+*~
+# Ignore compiled list files
+*fasl
+
